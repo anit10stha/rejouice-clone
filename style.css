@@ -1,0 +1,172 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'nb';
+}
+
+@font-face {
+    font-family: 'nb';
+    src: url('./fonts/NBInternationalProBoo.ttf');
+}
+
+@font-face {
+    font-family: 'rej';
+    src: url('./fonts/Rejouice-Headline.ttf');
+}
+
+.page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.cursor{
+    height: 7vw;
+    width: 7vw;
+    background-color: rgba(22, 21, 21, 0.651);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    transition: all 0.2s linear;
+}
+
+.cursor h5{
+    font-size: 1rem;
+    font-weight: 100;
+    color: white;
+}
+
+.page1 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+
+
+.page1-content{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    color: white;
+    /* background-color: black; */
+    z-index: 10;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw 3vw;
+}
+
+nav h3{
+    font-weight: 100;
+    cursor: pointer;
+}
+
+nav h4{
+    font-size: 1.2rem;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+.page1-content h1{
+    font-family: 'rej'; 
+    font-size: 25vw;
+    font-weight: 100;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    padding-top: 20vh;
+}
+
+/* page 2 */
+.page2{
+    height: 100vh;
+    width: 100%;
+}
+
+.page2-content{
+    width: 96%;
+    margin-top: 10vh;
+    margin-left: 2%;
+}
+
+.page2-content-heading{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5vw 1vw;
+    border-bottom: 1px solid rgb(167, 163, 163);
+}
+
+.page2-content h3{
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: #464645;
+}
+
+.page2-content h3 sup{
+    font-size: 0.7rem;
+}
+
+.page2-content-paragraph{
+    margin-top: 2vh;
+    font-size: 3rem;
+    font-weight: 100;
+}
+
+/* page 3 */
+.page3{
+    height: 100vh;
+    width: 100%;
+}
+
+.page3-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5vw 1vw;
+}
+
+.page3-content h2{
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: #2e2e2d;
+}
+
+.page3-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vw;
+    gap: 5vw;
+}
+
+.page3-box .box video{
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.page3-box .box img{
+    height: 500px;
+    width: 400px;
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    transition: all 0.2s linear;
+}
+
+.page3-box .box:hover img{
+    opacity: 0;
+}
